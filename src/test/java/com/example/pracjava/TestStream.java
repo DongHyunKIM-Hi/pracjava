@@ -21,6 +21,26 @@ public class TestStream {
         Stream<String> stream6 = Stream.generate(()->"create").limit(5); // 람다로 스트림 생성하기
         Stream<String> stream7 = Stream.iterate("a", n -> n + n).limit(5); // iterate는 출력된 요속가 다음 요소의 인풋으로 들어간다.
 
+
+        stream1.forEach(System.out::println);
+        System.out.println("==============");
+        stream2.forEach(System.out::println);
+        System.out.println("==============");
+        stream3.forEach(System.out::println);
+        System.out.println("==============");
+        stream4.forEach(System.out::println);
+        System.out.println("==============");
+        stream5.forEach(System.out::println);
+        System.out.println("==============");
+        stream6.forEach(System.out::println);
+        System.out.println("==============");
+        stream7.forEach(System.out::println);
+        System.out.println("==============");
         // Stream 가공하기
+    }
+
+    @Test
+    public void test2(){
+
     }
 }
